@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ebae34d1d6.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.7.0.js"></script> <!--cdn link-->
+    <script src="script.js"></script>  
+    <title> Weather App</title>
+</head>
+<body>
+    <div class="main">
+        <h1 style="display: block; text-align: center; color:#3b0aeb;">ClimaCheck : Free Weather App</h1>
+        <br>
+        <form method="get" action="#">
+        <div class="top-header">
+         <input type="text" placeholder="Enter your city name......" id="search" autocomplete="off">
+         <i class="fa-solid fa-magnifying-glass"></i>
+         <input type="submit" value="Get Details" id="detail-btn">
+        </div>
+        </form>
+        <div class="container">
+        <img src="icons/cloud.svg" alt="weather-img" width="200px" height="150px" style="margin: auto;">
+        <h1 style="text-align: center;color: red;margin: 12px auto;" id="location">Varanasi, IN</h1>
+        <h2 style="text-align: center;color: #262626;margin: 12px auto;" id="description">CLEAR</h2>
+        <div class="main-report">
+            <div class="report">
+                <h3 id="temp">Temperature : 32°C</h3>
+            </div>
+            <div class="report">
+                <h3 id="humidity">Humidity : 50%</h3>
+            </div>
+            <div class="report">
+                <h3 id="wind-speed">Wind Speed : 2.5 Km/h</h3>
+            </div>
+            <div class="report">
+                <h3 id="pressure">Pressure : 919 hpa</h3>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
